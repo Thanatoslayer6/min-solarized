@@ -13,9 +13,10 @@ rm -rf themes/min-solarized/.git
 ```
 
 If you'd like some example content and an example config file to get started, you can copy the `exampleSite` directory into your root Hugo directory.
+Simply execute the command below inside your project root or hugo site.
 
 ```bash
-cp -r themes/min-solarized/* ./
+cp -r themes/min-solarized/exampleSite/* ./
 ```
 
 To learn more about building themes in Hugo, refer to Hugo's [templating documentation](https://gohugo.io/templates/).
