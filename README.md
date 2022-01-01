@@ -5,7 +5,7 @@ A minimal solarized hugo theme
 
 ## Getting started
 
-Inside your project hugo folder, copy the theme to your `themes` folder.
+After you've done `hugo new site <yoursitename>`, inside your Hugo project folder, copy the theme to your `themes` folder.
 
 ```bash
 git clone https://github.com/thanatoslayer6/min-solarized-theme themes/min-solarized
@@ -17,6 +17,13 @@ Simply execute the command below inside your project root or hugo site.
 
 ```bash
 cp -r themes/min-solarized/exampleSite/* ./
+```
+
+Or you can just clone this repo, edit the `config.toml` inside the `exampleSite` directory then uncomment `theme = "../../"` and comment the current one above...
+after that, you can just simply execute...
+
+```
+hugo server -D
 ```
 
 To learn more about building themes in Hugo, refer to Hugo's [templating documentation](https://gohugo.io/templates/).

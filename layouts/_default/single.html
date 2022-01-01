@@ -1,7 +1,11 @@
-{{ partial "head.html" . }}
+{{ partialCached "head.html" . }}
 <link rel="stylesheet" href="/css/single.css"/>
+{{ $md := resources.Get "sass/markdown.scss" }}
+{{ $mdstyles := $md | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $mdstyles.RelPermalink }}" integrity="{{ $mdstyles.Data.Integrity }}">
 {{ partialCached "nav.html" . }}
 
+<title>{{ .Title }}</title>
 <div class="Container">
     <div class="Title">
         <h1>{{ .Title }}</h1>

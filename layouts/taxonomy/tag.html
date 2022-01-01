@@ -1,10 +1,11 @@
-{{ partial "head.html" . }}
+{{ partialCached "head.html" . }}
 <link rel="stylesheet" href="/css/list.css"/>
 <link rel="stylesheet" href="/css/pagination.css"/>
 {{ partialCached "nav.html" . }}
 {{ $dateFormat := .Site.Params.dateFormat | default "(Mon) Jan 2, 2006" }}     
 {{ $rl := .RelPermalink }}
 
+<title>Tags | {{ .Title }}</title>
 <div class="Container">
     <div class="Post-heading">
         <h1>{{ $rl }}</h1>
@@ -39,5 +40,5 @@
         {{ end }}
         </ul>
     </div>
-    {{ partial "pagination.html" . }}
+    {{ partialCached "pagination.html" . }}
 </div>

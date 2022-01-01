@@ -1,7 +1,8 @@
-{{ partial "head.html" . }}
+{{ partialCached "head.html" . }}
 <link rel="stylesheet" href="/css/taxonomy.css"/>
 {{ partialCached "nav.html" . }}
 
+<title>{{ .Title }}</title>
 <div class="Container">
     <div class="Post-heading">
         <h1>{{ .RelPermalink }}</h1>

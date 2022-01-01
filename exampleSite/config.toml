@@ -1,8 +1,10 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = ''
+title = '- Homepage -'
 paginate = 5
 theme = "min-solarized"
+# To test this theme, uncomment below then add a comment above then run `hugo server -D` in the current dir (exampleSite)
+# theme = "../../"
 
 [params]
   # Icon order here change to "" to display nothing
